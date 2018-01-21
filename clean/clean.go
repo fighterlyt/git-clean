@@ -10,7 +10,7 @@ var (
   gits=[]string{}
   exclude=""
 )
-func sClean(root,e string) {
+func Clean(root,e string) {
   exclude=e
   filepath.Walk(root,Record)
   for _,git:=range gits{
